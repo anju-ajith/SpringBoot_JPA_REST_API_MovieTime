@@ -8,6 +8,14 @@ public class MovieDetails {
 	    private String Poster;
 	    private String Plot;
 	    private String imdbRating;
+	    private String imdbID;
+	    
+		public String getImdbID() {
+			return imdbID;
+		}
+		public void setImdbID(String imdbID) {
+			this.imdbID = imdbID;
+		}
 		public String getTitle() {
 			return Title;
 		}
@@ -53,8 +61,10 @@ public class MovieDetails {
 		@Override
 		public String toString() {
 			return "MovieDetails [Title=" + Title + ", Year=" + Year + ", Genre=" + Genre + ", Director=" + Director
-					+ ", Poster=" + Poster + ", Plot=" + Plot + ", imdbRating=" + imdbRating + "]";
+					+ ", Poster=" + Poster + ", Plot=" + Plot + ", imdbRating=" + imdbRating + ", imdbID=" + imdbID
+					+ "]";
 		}
+		
 	    
 	    
 

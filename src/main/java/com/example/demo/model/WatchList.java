@@ -11,9 +11,7 @@ public class WatchList {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	 private int id;
 	 private int userId;
-	  private long imdbid;
-	  private String poster;
-	  private String title;
+	  private String imdbid;
 	  public int getId() {
 		  return id;
 	  }
@@ -26,29 +24,16 @@ public class WatchList {
 	  public void setUserId(int userId) {
 		  this.userId = userId;
 	  }
-	  public long getImdbid() {
+	  public String getImdbid() {
 		  return imdbid;
 	  }
-	  public void setImdbid(long imdbid) {
+	  public void setImdbid(String imdbid) {
 		  this.imdbid = imdbid;
-	  }
-	  public String getPoster() {
-		  return poster;
-	  }
-	  public void setPoster(String poster) {
-		  this.poster = poster;
-	  }
-	  public String getTitle() {
-		  return title;
-	  }
-	  public void setTitle(String title) {
-		  this.title = title;
 	  }
 	  @Override
 	  public String toString() {
-		return "WatchList [id=" + id + ", userId=" + userId + ", imdbid=" + imdbid + ", poster=" + poster + ", title="
-				+ title + "]";
+		return "WatchList [id=" + id + ", userId=" + userId + ", imdbid=" + imdbid + "]";
 	  }
 	  
-
+	 
 }
